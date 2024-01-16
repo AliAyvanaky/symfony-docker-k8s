@@ -38,6 +38,6 @@ EXPOSE 80
 COPY ./docker/entrypoint.sh /etc/entrypoint.sh
 
 RUN chmod +x /etc/entrypoint.sh
-RUN chmod -R 777 /var/www/app/var/*
+RUN chmod -R 777 /var/www/app/var
 
 ENTRYPOINT ["/etc/entrypoint.sh"]
